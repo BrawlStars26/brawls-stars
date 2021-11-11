@@ -1,0 +1,89 @@
+
+
+main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 300px;
+    background-image: url('img/фон.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote {
+    padding: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+blockquote::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('img/quote.png');
+    transform: scale(0.5);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-image: url('img/фон.jpg');   
+}
+
+h1 {
+    font-size: 50px;
+    color: #f5ff61;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 2;   
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    gap: 50px;
+    transition: 0.3s;
+}
+
+.nav-list__item {
+
+    cursor: pointer;
+}
+
+.nav-list__item:hover {
+    color: blueviolet;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.info {
+    color: white;
+}
+
+.leon {
+    margin-bottom: 20px;
+}
